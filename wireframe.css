@@ -1,0 +1,137 @@
+html, body{
+    margin:0;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+/* .right{
+    flex: 3;
+}
+.left{
+    flex: 1;
+} */
+
+.wrapper{
+    display: flex;
+}
+h4{
+    margin:0;
+}
+
+.participants{
+    flex: 1;
+    padding: 2%;
+    height: 100%;
+    background-color: rgb(255,255,255);
+    overflow: scroll;
+}
+
+.participant{   
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+}
+.participants .right img{
+    height: 10px;
+    width: 10px;
+}
+
+.participants .participant .right{
+    display: flex;
+    flex-direction: column;
+}
+
+.participants .participant .left img{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.participants .participant .right p{
+    color: rgb(156,169,192)
+}
+.participant .row{
+    display: flex;
+    flex-direction: row;
+    color: rgb(156,169,192);
+}
+
+.participant .right .row{
+ padding-top: 2%;
+}
+
+.participant .right .row img{
+    padding-top: 5%;
+    margin-right: 7%;
+}
+.screen{
+    flex: 4;
+    background-color: #404853;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: relative;
+}
+
+.self{
+    border-radius: 15px;
+    padding: 1% 5%;
+    background-color: #1E2835;
+    position: absolute;
+    top: 70%;
+    left: 41%;
+}
+
+.screen .left, .screen .right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.screen img{
+    border-radius: 50%;
+    height: 75px;
+    width: 75px;
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.screen .imgcontainer{
+    position: relative; 
+    padding: 18.5% 0%;
+    flex: 1;
+    display: flex; 
+    justify-content: center;
+}
+
+.screen .label{
+    color: #EFF0F2;
+    border-radius: 5px;
+    position: absolute;
+    padding: 1% 10%;
+    background-color: #1E2835;
+    top: 0%;
+    left: 35%;
+}
+
+.screen .label img, .self .bar{
+    margin-top: 5px;    
+    height: 5px;
+    width: 100px;
+}
+.screen .bar{
+    margin-bottom: 10px;
+}
+.screen .row img{
+    width: 20px;
+    height: 20px;
+}
+
+.screen .row{
+    display: flex;
+    margin-top: 5px
+}
